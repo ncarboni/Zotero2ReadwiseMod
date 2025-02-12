@@ -1,3 +1,16 @@
+Change from official package:
+
+zt2rw.py use
+```python
+query = self.zotero_client.items(itemType=item_type, since=since)
+```
+instead of
+```python
+query = self.zotero_client.items(itemType={item_type}, since=since)
+```
+The rest is the same
+
+
 # Zotero ➡️ Readwise
 
 `zotero2readwise` is a Python library that retrieves all [Zotero](https://www.zotero.org/) annotations† and notes. 
